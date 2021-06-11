@@ -1,0 +1,326 @@
+body{
+    background-color: rgb(218, 210, 210);
+}
+section{
+    position: relative;
+    background-color: rgb(248, 244, 244);
+    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    font-family: arial;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+}
+section h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: arial;
+}
+section h2{
+    color: white;
+    margin-top: 0%;
+    padding-left:25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(5, 5, 207, 0.616);
+    border-radius: 10px;
+}
+section legend{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+section label{
+    width: 400px;
+    height: 25px;
+    display: flex;
+    background-color: rgb(218, 210, 210);
+    margin-bottom: 5px;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    
+}
+#inicio{
+    padding: 10% 10%;
+    text-align: center;
+}
+#btn-inicio {
+    margin-top: 15px;
+    width: 40%;
+    height: 40px;
+    background-color: rgba(4, 4, 133, 0.753);
+    color: white;
+    border-radius: 20px; 
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+#b1{
+   width: 50px;
+   height: 50px; 
+   background-color: blue;
+   border-radius: 100%;
+   top: 20%;
+   left: 35%;
+   position: fixed;
+   visibility: hidden;
+}
+#b2{
+    width: 50px;
+    height: 50px; 
+    background-color: maroon;
+    border-radius: 100%;
+    top: 20%;
+    left: 60%;
+    position: fixed;
+    visibility: hidden;
+ }
+
+#um{
+    visibility: hidden; 
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#um-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 10px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#dois{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#dois-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#tres{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#tres-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#quatro{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#quatro-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#cinco{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#cinco-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#seis{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#seis-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#sete{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#sete-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#oito{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#oito-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#nove{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#nove-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#dez{
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    width: 95%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#dez-botao{
+    visibility: hidden;
+    display: inline;
+    margin-left: 80%;
+    margin-top: 14px;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(5, 5, 207);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+#tot{
+    border-radius: 15px;
+    background-color: blueviolet;
+    width: 50%;
+    visibility: hidden;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+}
+#tot h3{
+    font-size: 60px;
+    margin-top: 5px;
+}
+#tot p{
+    font-size: 30px;
+    margin-top: 25px;
+    color: white;
+}
+
+#gab{
+    visibility: hidden;
+    position: absolute;
+    width: 25%;
+    top: 25%;
+    left: 65%;
+}
+#gab p{
+    padding-left: 10px;
+    background-color: blue;
+    margin: 2px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+}
+#txtfin{
+    visibility: hidden;
+    position: absolute;
+    left: 13%;
+    top: 70%;
+}
