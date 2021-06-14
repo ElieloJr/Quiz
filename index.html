@@ -18,7 +18,7 @@
     </div>
     <div id="um">
         <h2>Questão 01</h2>
-        <legend>O curso de INI se encontra em qual unidade Fieb?</legend>
+        <legend class="legenda">O curso de INI se encontra em qual unidade Fieb?</legend>
             <label for="radio-1-1"><input type="radio" name="radio-1" id="radio-1-1">Belval</label>
             <label for="radio-1-2"><input type="radio" name="radio-1" id="radio-1-2">Engenho Novo</label>
             <label for="radio-1-3"><input type="radio" name="radio-1" id="radio-1-3">Mutinga</label>
@@ -27,7 +27,7 @@
     
     <div id="dois">
         <h2>Questão 02</h2>
-        <legend>Qual professor é o coordenador do curso?</legend>
+        <legend class="legenda">Qual professor é o coordenador do curso?</legend>
         
         <label for="radio-2-1"><input type="radio" name="radio-2-1" id="radio-2-1">Marcos</label>
         <label for="radio-2-2"><input type="radio" name="radio-2-1" id="radio-2-2">Suelaine</label>
@@ -37,7 +37,7 @@
 
     <div id="tres">
         <h2>Questão 03</h2>
-        <legend>A sigla INI é a abreviação de:</legend>
+        <legend class="legenda">A sigla INI é a abreviação de:</legend>
     
         <label for="radio-3-1"><input type="radio" name="radio-3-1" id="radio-3-1">Integração na Internet</label>
         <label for="radio-3-2"><input type="radio" name="radio-3-1" id="radio-3-2">Infraestrutura na Internet</label>
@@ -47,7 +47,7 @@
 
     <div id="quatro">
         <h2>Questão 04</h2>
-        <legend>O curso integrado ao ensino médio tem a duração de:</legend>
+        <legend class="legenda">O curso integrado ao ensino médio tem a duração de:</legend>
     
         <label for="radio-4-1"><input type="radio" name="radio-4-1" id="radio-4-1">3 anos</label>
         <label for="radio-4-2"><input type="radio" name="radio-4-1" id="radio-4-2">1ano</label>
@@ -57,7 +57,7 @@
 
     <div id="cinco">
         <h2>Questão 05</h2>
-        <legend>O curso módulo tem a duração de:</legend>
+        <legend class="legenda">O curso módulo tem a duração de:</legend>
         
         <label for="radio-5-1"><input type="radio" name="radio-5-1" id="radio-5-1">3 anos</label>
         <label for="radio-5-2"><input type="radio" name="radio-5-1" id="radio-5-2">1ano</label>
@@ -67,7 +67,7 @@
 
     <div id="seis">
         <h2>Questão 06</h2>
-        <legend>Durante o curso integrado, o professor Daniel ministra quantas matérias?</legend>
+        <legend class="legenda">Durante o curso integrado, o professor Daniel ministra quantas matérias?</legend>
         
         <label for="radio-6-1"><input type="radio" name="radio-6-1" id="radio-6-1">1</label>
         <label for="radio-6-2"><input type="radio" name="radio-6-1" id="radio-6-2">2</label>
@@ -77,7 +77,7 @@
 
     <div id="sete">
         <h2>Questão 07</h2>
-        <legend>O primeiro ano do curso WDAM tem como professor o</legend>
+        <legend class="legenda">O primeiro ano do curso WDAM tem como professor o</legend>
         
         <label for="radio-7-1"><input type="radio" name="radio-7-1" id="radio-7-1">Denis</label>
         <label for="radio-7-2"><input type="radio" name="radio-7-1" id="radio-7-2">Daniel</label>
@@ -87,7 +87,7 @@
 
     <div id="oito">
         <h2>Questão 08</h2>
-        <legend>Para o terceiro ano da turma de 2021 a professora Suelaine da aula de</legend>
+        <legend class="legenda">Para o terceiro ano da turma de 2021 a professora Suelaine da aula de</legend>
         
         <label for="radio-8-1"><input type="radio" name="radio-8-1" id="radio-8-1">ANPR</label>
         <label for="radio-8-2"><input type="radio" name="radio-8-1" id="radio-8-2">PLAO</label>
@@ -97,7 +97,7 @@
 
     <div id="nove">
         <h2>Questão 09</h2>
-        <legend>O professor Rogério ensina:</legend>
+        <legend class="legenda">O professor Rogério ensina:</legend>
         
         <label for="radio-9-1"><input type="radio" name="radio-9-1" id="radio-9-1">PHP</label>
         <label for="radio-9-2"><input type="radio" name="radio-9-1" id="radio-9-2">HTML</label>
@@ -107,7 +107,7 @@
 
     <div id="dez">
         <h2>Questão 10</h2>
-        <legend>Para poder completar o curso com exito é necessario:</legend>
+        <legend class="legenda">Para poder completar o curso com exito é necessario:</legend>
         
         <label for="radio-10-1"><input type="radio" name="radio-10-1" id="radio-10-1">Entregar o TCC</label>
         <label for="radio-10-2"><input type="radio" name="radio-10-1" id="radio-10-2">Fazer uns paranaue pra passar</label>
@@ -133,12 +133,15 @@
         <p id="pNove">9</p>
         <p id="pDez">10</p>
     </div>
-    
 
 </section>
+    <button onclick="modeDark()" id="modeDark">Dark Mode</button>
+    <button onclick="modeClear()" id="modeClear">Clear Mode</button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script> 
+
+
   $("#btn-inicio").click(function(){
     $("#inicio").css('visibility', 'hidden')
     $("#b1").css('visibility', 'visible')
@@ -332,6 +335,149 @@
         document.querySelector("#nota").innerHTML = `${total} de 10`
     }
 
+    function modeDark(){
+            document.querySelector("body").style.backgroundColor = "#212121";
+            document.querySelector("section").style.backgroundColor = "#363636";
+            document.querySelector("#btn-inicio").style.backgroundColor = "#FFC700";
+            document.querySelector("#btn-inicio").style.color = "#212121";
+            document.querySelector("h1").style.color = "white";
+            
+            document.querySelector("#um h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#um h2").style.color = "#212121";
+            document.querySelector("#um legend").style.color = "white";
+            document.querySelector("#um-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#um-botao").style.color = "#212121";
+            
+            document.querySelector("#dois h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#dois h2").style.color = "#212121";
+            document.querySelector("#dois legend").style.color = "white";
+            document.querySelector("#dois-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#dois-botao").style.color = "#212121";
+            
+            document.querySelector("#tres h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#tres h2").style.color = "#212121";
+            document.querySelector("#tres legend").style.color = "white";
+            document.querySelector("#tres-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#tres-botao").style.color = "#212121";
+            
+            document.querySelector("#quatro h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#quatro h2").style.color = "#212121";
+            document.querySelector("#quatro legend").style.color = "white";
+            document.querySelector("#quatro-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#quatro-botao").style.color = "#212121";
+            
+            document.querySelector("#cinco h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#cinco h2").style.color = "#212121";
+            document.querySelector("#cinco legend").style.color = "white";
+            document.querySelector("#cinco-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#cinco-botao").style.color = "#212121";
+            
+            document.querySelector("#seis h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#seis h2").style.color = "#212121";
+            document.querySelector("#seis legend").style.color = "white";
+            document.querySelector("#seis-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#seis-botao").style.color = "#212121";
+            
+            document.querySelector("#sete h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#sete h2").style.color = "#212121";
+            document.querySelector("#sete legend").style.color = "white";
+            document.querySelector("#sete-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#sete-botao").style.color = "#212121";
+            
+            document.querySelector("#oito h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#oito h2").style.color = "#212121";
+            document.querySelector("#oito legend").style.color = "white";
+            document.querySelector("#oito-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#oito-botao").style.color = "#212121";
+            
+            document.querySelector("#nove h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#nove h2").style.color = "#212121";
+            document.querySelector("#nove legend").style.color = "white";
+            document.querySelector("#nove-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#nove-botao").style.color = "#212121";
+            
+            document.querySelector("#dez h2").style.backgroundColor = "#FFC700";
+            document.querySelector("#dez h2").style.color = "#212121";
+            document.querySelector("#dez legend").style.color = "white";
+            document.querySelector("#dez-botao").style.backgroundColor = "#FFC700";
+            document.querySelector("#dez-botao").style.color = "#212121";
+
+            document.querySelector("#modeDark").style.visibility = "hidden"
+            document.querySelector("#modeClear").style.visibility = "visible"
+    }
+
+    function modeClear(){
+        document.querySelector("#modeDark").style.visibility = "visible"
+        document.querySelector("#modeClear").style.visibility = "hidden"
+
+        document.querySelector("body").style.backgroundColor = "rgb(218, 210, 210)";
+            document.querySelector("section").style.backgroundColor = "rgb(248, 244, 244)";
+            document.querySelector("#btn-inicio").style.backgroundColor = "rgba(4, 4, 133, 0.753)";
+            document.querySelector("#btn-inicio").style.color = "white";
+            document.querySelector("h1").style.color = "black";
+            
+            document.querySelector("#um h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#um h2").style.color = "white";
+            document.querySelector("#um legend").style.color = "black";
+            document.querySelector("#um-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#um-botao").style.color = "white";
+            
+            document.querySelector("#dois h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#dois h2").style.color = "white";
+            document.querySelector("#dois legend").style.color = "black";
+            document.querySelector("#dois-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#dois-botao").style.color = "white";
+            
+            document.querySelector("#tres h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#tres h2").style.color = "white";
+            document.querySelector("#tres legend").style.color = "black";
+            document.querySelector("#tres-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#tres-botao").style.color = "white";
+            
+            document.querySelector("#quatro h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#quatro h2").style.color = "white";
+            document.querySelector("#quatro legend").style.color = "black";
+            document.querySelector("#quatro-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#quatro-botao").style.color = "white";
+            
+            document.querySelector("#cinco h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#cinco h2").style.color = "white";
+            document.querySelector("#cinco legend").style.color = "black";
+            document.querySelector("#cinco-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#cinco-botao").style.color = "white";
+            
+            document.querySelector("#seis h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#seis h2").style.color = "white";
+            document.querySelector("#seis legend").style.color = "black";
+            document.querySelector("#seis-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#seis-botao").style.color = "white";
+            
+            document.querySelector("#sete h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#sete h2").style.color = "white";
+            document.querySelector("#sete legend").style.color = "black";
+            document.querySelector("#sete-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#sete-botao").style.color = "white";
+            
+            document.querySelector("#oito h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#oito h2").style.color = "white";
+            document.querySelector("#oito legend").style.color = "black";
+            document.querySelector("#oito-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#oito-botao").style.color = "white";
+            
+            document.querySelector("#nove h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#nove h2").style.color = "white";
+            document.querySelector("#nove legend").style.color = "black";
+            document.querySelector("#nove-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#nove-botao").style.color = "white";
+            
+            document.querySelector("#dez h2").style.backgroundColor = "rgba(5, 5, 207, 0.616)";
+            document.querySelector("#dez h2").style.color = "white";
+            document.querySelector("#dez legend").style.color = "black";
+            document.querySelector("#dez-botao").style.backgroundColor = "rgb(5, 5, 207)";
+            document.querySelector("#dez-botao").style.color = "white";
+    }
+
+    
 </script>
 
 </body>
