@@ -1,0 +1,8 @@
+#212121 - escurão
+
+#363636 - Escuro mais claro
+
+#FFC700 - Yellow
+
+#d4d4d485 - Quase branco
+

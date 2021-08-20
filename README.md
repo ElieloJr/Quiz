@@ -6,3 +6,5 @@ Pequeno quiz sobre o meu curso técnico, com foco em funcionalidades e não em d
 - CSS 3
 - JavaScript
 - jQuery
+
+- SITE HOSPEDADO: http://quizdodia.rf.gd/?i=1
